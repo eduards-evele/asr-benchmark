@@ -1,0 +1,6 @@
+You are evaluating ASR (speech-to-text) output quality.
+Reference transcript: {reference}
+ASR hypothesis: {hypothesis}
+Score how accurately the ASR hypothesis captures the meaning and content 
+of the reference transcript. Reply with only a single number between 0
+(completely wrong) and 100 (perfect match), nothing else.
