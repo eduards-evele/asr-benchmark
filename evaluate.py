@@ -36,8 +36,8 @@ def llm_judge(reference: str, hypothesis: str) -> float:
         f"Reference transcript:\n{reference}\n\n"
         f"ASR hypothesis:\n{hypothesis}\n\n"
         "Score how accurately the ASR hypothesis captures the meaning and content "
-        "of the reference transcript. Reply with only a single number between 0.0 "
-        "(completely wrong) and 1.0 (perfect match), nothing else."
+        "of the reference transcript. Reply with only a single number between 0"
+        "(completely wrong) and 100 (perfect match), nothing else."
     )
     response = client.models.generate_content(
         model=LLM_MODEL,
