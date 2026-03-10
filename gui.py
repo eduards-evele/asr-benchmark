@@ -181,7 +181,7 @@ class ASRBenchmarkGUI:
         for row_id, hypothesis in zip(row_ids, hypotheses):
             try:
                 score = llm_judge(reference, hypothesis)
-                llm_text = f"{(1 - score):.2%}"
+                llm_text = f"{100 - score}"
             except Exception as e:
                 import traceback, sys
                 traceback.print_exc(file=sys.stderr)
