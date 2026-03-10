@@ -1,0 +1,3 @@
+jiwer
+python-dotenv
+google-genai
